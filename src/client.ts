@@ -42,34 +42,34 @@ class VeriteosClient {
   }
 }
 
-const client = new VeriteosClient({
-  sentinelUri: "https://sentinel.infra.veriteos.com",
-  shouldSendData: false,
-});
+// const client = new VeriteosClient({
+//   sentinelUri: "https://sentinel.infra.veriteos.com",
+//   shouldSendData: false,
+// });
 
-client.register({
-  pipeline: {
-    name: "demo_events",
-    version: "0.1",
-    user: "test@veriteos.com",
-  },
-  event: {
-    taskName: "demo-test",
-    taskVersion: "0.0.1",
-    taskEnvironment: "dev",
-  },
-  data: {
-    payload: {
-      actor: "Third party",
-      action: "Prompt",
-      payload: { hash: "e0031dd346a21d128fe89f2218ac133c" },
-    },
-    type: "json",
-    uri: "http://example.com",
-    source: "demo",
-    destination: "heimdall",
-  },
-  reporter: {
-    name: "demo-client-test",
-  },
-});
+// client.register({
+//   pipeline: {
+//     name: "demo_events",
+//     version: "0.1",
+//     user: "test@veriteos.com",
+//   },
+//   event: {
+//     taskName: "demo-test",
+//     taskVersion: "0.0.1",
+//     taskEnvironment: "dev",
+//   },
+//   data: {
+//     payload: {
+//       actor: "Third party",
+//       action: "Prompt",
+//       payload: { hash: "e0031dd346a21d128fe89f2218ac133c" },
+//     },
+//     type: "json",
+//     uri: "http://example.com",
+//     source: "demo",
+//     destination: "heimdall",
+//   },
+//   reporter: {
+//     name: "demo-client-test",
+//   },
+// });

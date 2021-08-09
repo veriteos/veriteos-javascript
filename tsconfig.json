@@ -3,18 +3,19 @@
     "module": "commonjs",
     "esModuleInterop": true,
     "target": "es6",
-    "noImplicitAny": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
     "sourceMap": true,
-    "outDir": "dist",
+    "outDir": "./dist",
     "baseUrl": ".",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "paths": {
-      "*": ["node_modules/*"]
-    },
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "typeRoots": ["./src/node_modules/@types"]
   },
-  "include": ["src/**/**/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "types": ["@types/jest", "@types/mocha"],
+  "include": ["./src/**/*.ts", "./src/__tests__/*.test.ts"],
+  "exclude": ["./node_modules"]
 }

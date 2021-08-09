@@ -22,11 +22,11 @@ function getEventMetadata() {
   };
 }
 
-function generateMD5HashFromPayload(payload: object) {
+export function generateMD5HashFromPayload(payload: object) {
   return md5(JSON.stringify(payload)).toString();
 }
 
-function generateSHA256HashFromPayload(payload: object) {
+export function generateSHA256HashFromPayload(payload: object) {
   return sha256(JSON.stringify(payload)).toString();
 }
 
