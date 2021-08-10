@@ -1,7 +1,7 @@
 import superagent from "superagent";
 
 import { clientEventSchema, veriteosClientOptionsSchema } from "./validation";
-import { ClientEvent, ClientOptions } from ".";
+import { ClientEvent, ClientOptions } from "./types";
 import { Counter } from "./counter";
 import { enrichValidEvent, uris } from "./utils";
 

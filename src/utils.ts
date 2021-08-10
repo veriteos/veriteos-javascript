@@ -2,7 +2,7 @@ import { v4 as uuidv4, v1 as uuidv1 } from "uuid";
 import sha256 from "crypto-js/sha256";
 import md5 from "crypto-js/md5";
 import decamelize from "decamelize";
-import { ClientEvent, EventMetadataSchema } from ".";
+import { ClientEvent, EventMetadataSchema } from "./types";
 
 export const isBrowser =
   typeof window !== "undefined" && typeof window.document !== "undefined";
