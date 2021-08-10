@@ -15,7 +15,6 @@
     "resolveJsonModule": true,
     "typeRoots": ["./src/node_modules/@types"]
   },
-  "types": ["@types/jest", "@types/mocha"],
   "include": ["./src/**/*.ts", "./src/__tests__/*.test.ts"],
   "exclude": ["./node_modules"]
 }
