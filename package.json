@@ -1,8 +1,8 @@
 {
   "name": "veriteos",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Veriteos sentinel events registry",
-  "main": "dist/client.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
