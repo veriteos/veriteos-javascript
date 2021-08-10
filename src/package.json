@@ -1,8 +1,8 @@
 {
   "name": "veriteos",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "description": "Veriteos sentinel events registry",
+  "main": "dist/client.js",
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
@@ -26,7 +26,11 @@
       "./src/__tests__/fixtures"
     ]
   },
-  "keywords": [],
+  "keywords": [
+    "veriteos",
+    "veriteos client",
+    "veriteos events register"
+  ],
   "author": "Veriteos dev team",
   "license": "MIT",
   "dependencies": {

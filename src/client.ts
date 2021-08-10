@@ -1,11 +1,11 @@
 import superagent from "superagent";
 
 import { clientEventSchema, veriteosClientOptionsSchema } from "./validation";
-import { ClientEvent, ClientOptions } from "./types";
+import { ClientEvent, ClientOptions } from ".";
 import { Counter } from "./counter";
 import { enrichValidEvent, uris } from "./utils";
 
-class VeriteosClient {
+export class VeriteosClient {
   version: string;
   sentinelUri: string;
   shouldSendData: boolean;
@@ -23,7 +23,7 @@ class VeriteosClient {
     const c = Counter.getInstance();
 
     const enrichedEvent = enrichValidEvent(event, this.version, c.count);
-    console.log("this is enriched event", enrichedEvent);
+
     if (!this.shouldSendData) {
       delete enrichedEvent.data.payload;
     }
