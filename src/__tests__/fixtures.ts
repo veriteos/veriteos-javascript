@@ -32,14 +32,14 @@ const eventWithMetadata = enrichValidEvent(
   "0.0.1",
   0
 );
-console.log("this is event with meta", eventWithMetadata);
+
 export const testPayloads = {
   items: [
     {
       payload: { name: "Alice", age: 25 },
       pythonSHA256HashValue:
-        "0424dfbbc98dacd1e58bf68f2d8f37d388700a05160372e6e05ea91712f563de",
-      pythonMD5HashValue: "9f8fa962f210c399da7d6c8cf462eb55",
+        "45ca59b78c209d8bec5e7aa355d217c1a110c9105297bf641f8e090115bc0262",
+      pythonMD5HashValue: "60aac94c2ec3777879f970ef03a369e7",
     } as any,
     {
       payload: [1, 2, 3, 552222222222222],
@@ -50,14 +50,8 @@ export const testPayloads = {
     {
       payload: eventWithoutMetadata,
       pythonSHA256HashValue:
-        "e2b9dc27dcd0f52abfbe9635c50d21c51fce093599eaed9f7f95820addb55515",
-      pythonMD5HashValue: "8f612c68c1ae5d417a6b1d2fa06b5fad",
-    } as any,
-    {
-      payload: eventWithMetadata,
-      pythonSHA256HashValue:
-        "e2b9dc27dcd0f52abfbe9635c50d21c51fce093599eaed9f7f95820addb55515",
-      pythonMD5HashValue: "8f612c68c1ae5d417a6b1d2fa06b5fad",
+        "c40ec98f45898d8927763540d281b22bcf3fc55443211d6ba0c85d115e360296",
+      pythonMD5HashValue: "7c9cab5b674f5de5bf59aad8d62c568e",
     } as any,
   ],
 };
