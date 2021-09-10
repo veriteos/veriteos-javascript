@@ -1,6 +1,6 @@
 {
   "name": "veriteos",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Veriteos sentinel events registry",
   "main": "dist/index.js",
   "scripts": {
